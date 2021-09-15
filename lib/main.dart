@@ -1,3 +1,4 @@
+import 'package:f2_flutter_ecommerce_app/app_ui.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Image.asset('assets/images/1.png'),
+        child: Image.asset(appui.imgIphone82),
       ),
       
     );
