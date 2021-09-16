@@ -1,5 +1,9 @@
-import 'package:f2_flutter_ecommerce_app/app_ui.dart';
+import 'package:f2_flutter_ecommerce_app/values/app_fonts.dart';
+import 'package:f2_flutter_ecommerce_app/values/app_style.dart';
+import 'package:f2_flutter_ecommerce_app/values/app_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -24,8 +28,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Image.asset(appui.imgIphone82),
+      body: Center(
+        child: Text(
+  'This is Google Fonts',
+  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.headline4,
+  // color: Colors.red
+  ),
+),
+        
       ),
       
     );
