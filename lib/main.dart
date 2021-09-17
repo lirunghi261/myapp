@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Tánh Linh, Bình Thuậnn',
+                  'Tánh Linh, Bình Thuậnnnn',
                   style: TextStyle(
                     color: Colors.grey[500]
                   ),
