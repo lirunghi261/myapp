@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
-  runApp(const MyApp());
+  runApp(const MyApp());s
 }
 
 class MyApp extends StatelessWidget {
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Tánh Linh, Bình Thuận',
+                  'Tánh Linh, Bình Thuậnn',
                   style: TextStyle(
                     color: Colors.grey[500]
                   ),
