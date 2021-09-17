@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
-  runApp(const MyApp());s
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
