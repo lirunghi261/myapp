@@ -1,11 +1,28 @@
 
-import 'package:f2_flutter_ecommerce_app/values/app_fonts.dart';
+import 'package:english_today/values/app_fonts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
-class appstyle {
-  // static const TextStyle h3 = TextStyle(
-  //   fontSize : 32 ,
-  //   fontFamily : appfonts.sen
-  static TextStyle h3 = GoogleFonts.sen(
-    fontSize : 20);
+import 'package:flutter/material.dart';
+
+/**
+ * Style of Text, Button ...
+ */
+
+class FontFamily {
+  static final sen = 'Sen';
+}
+
+class AppStyles {
+  static TextStyle h1 = TextStyle(
+      fontFamily: FontFamily.sen, fontSize: 109.66, color: Colors.white);
+  static TextStyle h2 = TextStyle(
+      fontFamily: FontFamily.sen, fontSize: 67.77, color: Colors.white);
+  static TextStyle h3 = TextStyle(
+      fontFamily: FontFamily.sen, fontSize: 41.89, color: Colors.white);
+  static TextStyle h4 = TextStyle(
+      fontFamily: FontFamily.sen, fontSize: 25.89, color: Colors.white);
+  static TextStyle h5 =
+      TextStyle(fontFamily: FontFamily.sen, fontSize: 16, color: Colors.white);
+  static TextStyle h6 = TextStyle(
+      fontFamily: FontFamily.sen, fontSize: 9.89, color: Colors.white);
 }

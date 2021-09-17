@@ -1,43 +1,25 @@
-import 'package:f2_flutter_ecommerce_app/values/app_fonts.dart';
-import 'package:f2_flutter_ecommerce_app/values/app_style.dart';
-import 'package:f2_flutter_ecommerce_app/values/app_assets.dart';
+import 'package:f2_flutter_ecommerce_app/packages/quote/quote.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 
+import 'pages/landing_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Quotes().getAll();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIOverlays([]);
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
-    );
-  }
-}
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({ Key? key }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-  'This is Google Fonts',
-  style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.headline4,
-  // color: Colors.red
-  ),
-),
-        
-      ),
-      
+      home: LandingPage(),
     );
   }
 }
